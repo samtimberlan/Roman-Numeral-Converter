@@ -47,7 +47,7 @@ function convertToRomanUnit(num, romArr) {
   }
 
   if (num == 9) {
-    romanNumResultArr.push(arrayToBeUsed[1]);
+    romanNumResultArr.push(arrayToBeUsed[3]);
   }
 }
 //--- Second Algorithm---
