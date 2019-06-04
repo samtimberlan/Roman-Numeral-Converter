@@ -16,13 +16,12 @@ function convertToRoman(num) {
     .split("")
     .map(Number);
 
-  for (i = givenNumeral.length; i > 0; i--) {
+  for (var i = givenNumeral.length; i > 0; i--) {
     convertToRomanUnit(givenNumeral.shift(), RomanNumerals[i - 1]);
   }
 
   var result = romanNumResultArr.join("");
-
-  console.log(result);
+    console.log(result)
   return result;
 }
 
@@ -50,6 +49,8 @@ function convertToRomanUnit(num, romArr) {
     romanNumResultArr.push(arrayToBeUsed[3]);
   }
 }
+
+convertToRoman(891);
 //--- Second Algorithm---
 
 // var convertToRoman = function(num) {
